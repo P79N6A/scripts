@@ -16,3 +16,13 @@ find ~/Downloads/ -name  "*.torrent" | while read name; do
 done
 
 rm -rf "$tmpdir"
+
+## 
+## Another Method to add torrents.
+##
+# cd ~/Downloads/
+# for file in *.torrent; do
+#   ~/Documents/Work/library/xunlei-lixian/lixian_cli.py add --torrent $file
+#   rm $file
+# done
+
