@@ -8,7 +8,7 @@ msgs = {}
 errorCount = 0
 
 # 读数据.
-data = fs.readFileSync "./jserror.cashier.log", "utf-8"
+data = fs.readFileSync "./jserror.cashier.log.2", "utf-8"
 data = data.split("\n")
 
 # 遍历数据.
