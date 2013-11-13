@@ -1,10 +1,11 @@
-# encoding: utf-8
+# encode: utf-8
 
 # 文件名包含此 tag 的会被下载.
 DOWNLOAD_TAG = "[d]"
 
-######################
+##
 # 获取文件保存路径.
+
 def get_output_dir
   File.open("#{ENV["HOME"]}/.xunlei.lixian.config", "r").each_line do |line|
     next if line.index("--output-dir") == nil
@@ -12,8 +13,9 @@ def get_output_dir
   end
 end
 
-######################
+##
 # 下载文件.
+
 def download(item)
   return if item.index(DOWNLOAD_TAG) == nil
 
@@ -31,9 +33,9 @@ def download(item)
   `lx rename #{task_id} "#{new_task_name}"`
 end
 
-######################
-######################
+##
 # 获取列表并下载.
+
 list = `lx list --completed`
 list = list.encode("utf-8", "utf-8")
 list.split("\n").each do |item|
