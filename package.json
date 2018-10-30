@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "execa": "^1.0.0",
+    "yargs-parser": "^11.0.0"
+  }
+}
