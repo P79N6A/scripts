@@ -24,5 +24,5 @@ plugins=(
   vscode
   yarn
 )
-source $SCRIPTS_DIR/dotfiles/.bash_profile
 source $ZSH/oh-my-zsh.sh
+source $SCRIPTS_DIR/dotfiles/.bash_profile
