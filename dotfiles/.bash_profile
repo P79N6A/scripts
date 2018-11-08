@@ -111,9 +111,6 @@ function gitlabconfig() {
 # GH_TOKEN="523236d890ea33de3410b484fa8e613f139bfe6a"
 export GITHUB_AUTH="aad8b481df374d6c131851309f726e63000aa6dc"
 
-# extra
-source $CURRENT_DIR/.setup
-
 # backup
 #source "`brew --prefix`/etc/grc.bashrc"
 #alias mc="java -d64 -jar /Applications/Minecraft.app/Contents/Resources/Java/Bootstrap.jar"

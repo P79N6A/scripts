@@ -26,3 +26,4 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 source $SCRIPTS_DIR/dotfiles/.bash_profile
+source $SCRIPTS_DIR/dotfiles/.setup
