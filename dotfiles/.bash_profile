@@ -113,7 +113,6 @@ export GITHUB_AUTH="aad8b481df374d6c131851309f726e63000aa6dc"
 
 # extra
 source $CURRENT_DIR/.setup
-source $CURRENT_DIR/.zshrc
 
 # backup
 #source "`brew --prefix`/etc/grc.bashrc"
