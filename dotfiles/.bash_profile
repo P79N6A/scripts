@@ -14,8 +14,6 @@ alias udd="BROWSER=none HARD_SOURCE=1 umi dev"
 
 ## git
 alias git=hub
-alias g="git"
-alias gc="git commit -a"
 alias gp="git push origin master"
 alias gt="git status -sb"
 alias gcr="git checkout master && git fetch && git rebase -i"
@@ -23,8 +21,9 @@ alias gclean="git reset --hard && git clean -df"
 alias grebase="git fetch && git rebase -i"
 
 function gacp() {
-  git add -A && git commit -am "update" && gp
+  git add ./ && git commit -am "update" && gp
 }
+
 ## cd
 alias ..='cd ../'
 alias ...='cd ../../'
