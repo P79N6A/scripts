@@ -1,0 +1,4 @@
+
+# nvm
+[ -s "$HOME/.nvm/nvm.sh" ] && . "$HOME/.nvm/nvm.sh"
+[ -s "$HOME/git/nvm/nvm.sh" ] && . "$HOME/git/nvm/nvm.sh"
