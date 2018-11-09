@@ -1,6 +1,7 @@
 const execa = require('execa');
 const yParser = require('yargs-parser');
 const { readFileSync } = require('fs');
+const { join } = require('path');
 
 const args = yParser(process.argv.slice(2));
 
@@ -22,7 +23,7 @@ const args = yParser(process.argv.slice(2));
 
   // Set bypass
   if (args.on || args.bypass) {
-    const BYPASS_PATH = '/Users/chencheng/Documents/Files/2016/bypass';
+    const BYPASS_PATH = join(__dirname, 'dotfiles/bypass');
     const content = readFileSync(BYPASS_PATH, 'utf-8');
     const domains = content.split(', ');
     console.log(domains.join(', '));

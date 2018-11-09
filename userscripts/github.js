@@ -20,6 +20,7 @@ function isElementVisible(el) {
 }
 
 (function () {
+  console.log('Init github.js', /^https:\/\/github.com\/.+\/.+\/(issues|pull)\/.+/.test(location.href));
   if (/^https:\/\/github.com\/.+\/.+\/(issues|pull)\/.+/.test(location.href)) {
     window.addEventListener('keydown', (e) => {
       if (e.keyCode === 69 && e.shiftKey && e.altKey && e.ctrlKey && e.metaKey) {

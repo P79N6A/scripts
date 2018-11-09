@@ -16,6 +16,7 @@ alias udd="BROWSER=none HARD_SOURCE=1 umi dev"
 alias git=hub
 alias gp="git push origin master"
 alias gt="git status -sb"
+alias ga="git add ."
 alias gcr="git checkout master && git fetch && git rebase -i"
 alias gclean="git reset --hard && git clean -df"
 alias grebase="git fetch && git rebase -i"
@@ -27,6 +28,7 @@ function gacp() {
 ## cd
 alias ..='cd ../'
 alias ...='cd ../../'
+alias ..l.='cd ../../ && ll'
 alias ....='cd ../../../'
 alias ~="cd ~"
 alias -- -="cd -"
@@ -42,6 +44,7 @@ alias dw="npm run debug -- -w"
 alias tnpmi="npm install tnpm@4 -g --registry=http://registry.npm.alibaba-inc.com"
 
 ## misc
+alias c='code .'
 alias h='history'
 alias du='du -kh'
 alias df='df -kh'
@@ -52,7 +55,7 @@ alias cdtmp='cd `mktemp -d /tmp/sorrycc-XXXXXX`'
 alias ag2="ag --ignore-dir dist --ignore-dir spm_modules --ignore-dir node_modules"
 alias path='echo -e ${PATH//:/\\n}'
 alias flush="dscacheutil -flushcache"
-alias pi="ping www.baidu.com"
+alias pi="echo 'Pinging Baidu' && ping www.baidu.com"
 alias ip="ipconfig getifaddr en0 && ipconfig getifaddr en1"
 alias qr='qrcode-terminal'
 alias ee="stree"
@@ -105,6 +108,9 @@ function cdf() {
 function gitlabconfig() {
   git config user.name "云谦"
   git config user.email "yunqian@alibaba-inc.com"
+}
+function npm-latest() {
+  npm info $1 | grep latest
 }
 
 # lerna-changelog
