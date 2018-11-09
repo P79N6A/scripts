@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-export SCRIPTS_DIR=$HOME/code/github.com/sorrycc/scripts
+export SCRIPTS_DIR=$HOME/Code/github.com/sorrycc/scripts
 
 ZSH_THEME="robbyrussell"
 plugins=(

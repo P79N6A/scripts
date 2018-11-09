@@ -1,7 +1,7 @@
 
 # variables
 export EDITOR=vi
-export SCRIPTS_DIR=$HOME/code/github.com/sorrycc/scripts
+export SCRIPTS_DIR=$HOME/Code/github.com/sorrycc/scripts
 export CURRENT_DIR=$SCRIPTS_DIR/dotfiles
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
