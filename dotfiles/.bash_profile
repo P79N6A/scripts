@@ -115,7 +115,7 @@ function npm-latest() {
 
 # lerna-changelog
 # GH_TOKEN="523236d890ea33de3410b484fa8e613f139bfe6a"
-export GITHUB_AUTH="aad8b481df374d6c131851309f726e63000aa6dc"
+export GITHUB_AUTH="f8bc8acd18da2392a6ddce4adc0bb9e110c2b48d"
 
 # backup
 #source "`brew --prefix`/etc/grc.bashrc"
