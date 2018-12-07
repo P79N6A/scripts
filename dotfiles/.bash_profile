@@ -17,6 +17,7 @@ alias git=hub
 alias gp="git push origin master"
 alias gt="git status -sb"
 alias ga="git add ."
+alias gc="git commit -av"
 alias gcr="git checkout master && git fetch && git rebase -i"
 alias gclean="git reset --hard && git clean -df"
 alias grebase="git fetch && git rebase -i"
@@ -45,6 +46,7 @@ alias tnpmi="npm install tnpm@4 -g --registry=http://registry.npm.alibaba-inc.co
 
 ## misc
 alias c='code .'
+alias i='idea .'
 alias h='history'
 alias du='du -kh'
 alias df='df -kh'
